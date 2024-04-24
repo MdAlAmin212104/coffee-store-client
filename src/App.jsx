@@ -1,11 +1,10 @@
-
 import { useLoaderData } from 'react-router-dom'
 import './App.css'
 import Coffee from './Components/Coffee'
 import { useState } from 'react'
 
 function App() {
-  const loadedCoffees = useLoaderData()
+  const loadedCoffees = useLoaderData();
   const [coffees, setCoffees] = useState(loadedCoffees)
 
   return (

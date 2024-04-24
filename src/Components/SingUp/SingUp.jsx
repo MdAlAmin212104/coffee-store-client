@@ -15,7 +15,7 @@ const SingUp = () => {
                         console.log(res.user)
                         const createdAt = res.user?.metadata?.creationTime;
                         const user = { email, createdAt: createdAt }
-                        fetch('http://localhost:5000/user', {
+                        fetch('https://coffee-store-hh57clsq8-md-al-amin-islams-projects.vercel.app/user', {
                               method: 'POST',
                               headers: {
                                     'Content-Type': 'application/json'

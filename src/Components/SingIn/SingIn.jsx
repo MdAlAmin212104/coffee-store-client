@@ -20,7 +20,7 @@ const SingIn = () => {
 
                         }
                         // update last logged at in database
-                        fetch('http://localhost:5000/user', {
+                        fetch('https://coffee-store-hh57clsq8-md-al-amin-islams-projects.vercel.app/user', {
                               method: 'PATCH',
                               headers: { 'Content-Type': 'application/json' },
                               body: JSON.stringify(user)

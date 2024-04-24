@@ -20,7 +20,7 @@ const Coffee = ({ coffee, coffees, setCoffees }) => {
                   }).then((result) => {
                   if (result.isConfirmed) {
                         
-                        fetch(`http://localhost:5000/coffee/${id}`, {
+                        fetch(`https://coffee-store-hh57clsq8-md-al-amin-islams-projects.vercel.app/coffee/${id}`, {
                               method: "DELETE",
                         })
                               .then(res => res.json())
